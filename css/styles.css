@@ -46,6 +46,10 @@
     line-height: 24px;
   }
 
+  .mx-left{
+    justify-content: center;
+    padding-top: 15px;
+  }
 
 
   /*---------------------------------------
@@ -127,7 +131,10 @@
     height: 390px;
   }
 
-
+  .section-btn:hover {
+    background: #292929;
+    color: #ffffff;
+  }
 
   /*---------------------------------------
      BUTTONS               
@@ -210,6 +217,11 @@
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
+    display: flex;
+  }
+
+  .navbar-brand img{
+    max-width: 150px;
   }
 
   .custom-navbar .navbar-brand span {
@@ -367,7 +379,10 @@
 .hero-content p {
   font-size: 2em;
   color: #fff;
-  margin-bottom: 15px;
+  background-color: #ce3232;
+  padding: 15px;
+  margin-bottom: 20px !important; 
+  text-transform: capitalize;
   font-weight: 600;
 }
 
@@ -500,7 +515,61 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 35px;
-    
+  }
+
+  .section-input{
+    padding-top: 20px;
+  }
+
+  .input-box{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .input-box .label{
+    font-size: 25px;
+    font-weight: normal;
+    color: #666;
+  }
+
+  .input-box input{
+    position: absolute;
+    width: 50%;
+    outline: none;
+    font-size: 1.2em;
+    padding: 0 30px;
+    line-height: 50px;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+  }
+
+  .input-box .label-line{
+    position: absolute;
+    font-size: 1.1em;
+    color: #666;
+    padding: 0 25px;
+    margin: 0 20px;
+    transition: 0.2s ease;
+  }
+
+  .input-box input:focus,
+  .input-box input:valid{
+    color: #666;
+    border: 2px solid #ce3232;
+  }
+
+  .input-box input:focus + .label-line,
+  .input-box input:valid + .label-line{
+    color: #ce3232;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px, -22px) scale(0.88);
+    z-index: 1111;
   }
 
   .ul-text li{
@@ -529,6 +598,11 @@
   #team {
     background: #f9f9f9;
     height: 100vh;
+  }
+
+  #default-team{
+    height: 150px !important;
+    background: #f9f9f9;
   }
 
   .team-thumb {
@@ -816,6 +890,11 @@
     border-top: 1px solid rgba(0,0,0,0.05);
     padding: 120px 0;
     padding-bottom: 80px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  .last-footer{
+    border-bottom: 1px solid rgba(0,0,0,0.05);
   }
 
   footer .section-title {
@@ -850,7 +929,7 @@
     background-size: cover;
     border-radius: 20px;
     margin-top: 0;
-    padding: 40px 0 40px 80px;
+    padding: 18px;
     overflow: hidden;
     position: relative;
     z-index: 22;
@@ -877,14 +956,37 @@
 
   .footer-open-hour p {
     color: #d9d9d9;
+    font-size: 16px;
+    font-weight: 400;
   }
 
   .footer-open-hour strong {
     color: #f9f9f9;
   }
 
+  .app-download{
+    display: flex;
+  }
 
+  .app-download img{
+    width: 130px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
 
+  .app-download img:hover{
+    scale: 0.9;
+  }
+
+  .last-footer{
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .last-footer p{
+    font-size: 17px;
+    font-weight: 400;
+  }
   /*---------------------------------------
      SOCIAL ICON              
   -----------------------------------------*/
@@ -1068,5 +1170,45 @@
     .menu-thumb .menu-info {
       top: 60%;
     }
-  }
 
+    .mobile{
+      margin-top: 220px;
+    }
+
+    .team-mobile{
+      height: 150vh !important;
+    }
+
+    .team-mobile2{
+      height: 210vh !important;
+    }
+
+    .hero-content h1 {
+      font-size: 2em;
+    }
+    
+    .hero-content p {
+      font-size: 1.3em;
+    }
+
+    .d-none{
+      display: none;
+    }
+
+    .input-box .label{
+      font-size: 18px;
+    }
+
+    .input-box .label-line{
+      font-size: 11px;
+    }
+
+    .input-box{
+      margin-bottom: 10px;
+    }
+  
+    .mx-10{
+      margin-bottom: 15px !important;
+    }
+
+  }
